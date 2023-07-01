@@ -287,6 +287,7 @@
             });
 
             $('#showImportModal').click(function () { // 點擊匯入按鈕，彈出新增視窗
+                $('#import_file').val(null);
                 $('#AccountImportModal').modal("show");
             });
 
