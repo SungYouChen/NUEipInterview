@@ -42,9 +42,9 @@
         </div>
     </div>
 
-    @include('create_modal')
-    @include('update_modal')
-    @include('import_modal')
+    @include('account_info.create_modal')
+    @include('account_info.update_modal')
+    @include('account_info.import_modal')
 
     <script type="text/javascript">
         $(function () {

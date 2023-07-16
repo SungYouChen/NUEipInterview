@@ -21,5 +21,9 @@ Route::prefix('account')->group(function () {
     Route::post('/import', [App\Http\Controllers\AccountInfoController::class, 'import'])->name('account.import');
     Route::get('/export', [App\Http\Controllers\AccountInfoController::class, 'export'])->name('account.export');
 });
-
 Route::resource('/account', App\Http\Controllers\AccountInfoController::class);
+
+Route::prefix('test')->group(function () {
+    Route::post('/import', [App\Http\Controllers\TestController::class, 'import'])->name('test.import');
+});
+Route::resource('/test', App\Http\Controllers\TestController::class);

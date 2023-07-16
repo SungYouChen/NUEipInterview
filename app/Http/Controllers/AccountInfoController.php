@@ -35,7 +35,7 @@ class AccountInfoController extends Controller
      */
     public function index(): \Illuminate\Foundation\Application|View|Factory|Application
     {
-        return view('index');
+        return view('account_info.index');
     }
 
     /**
